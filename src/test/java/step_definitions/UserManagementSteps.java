@@ -4,12 +4,13 @@ import org.junit.Assert;
 
 import io.cucumber.java.en.*;
 import pages.LogInPage;
+import utilities.BrowserUtilities;
 import utilities.DataReader;
 import utilities.Driver;
 
 public class UserManagementSteps {
 	LogInPage loginPage = new LogInPage();
-
+	BrowserUtilities utils=new BrowserUtilities();
 	@Given("As a user, I am on the login page")
 	public void as_a_user_i_am_on_the_login_page() {
 		Driver.getDriver().get(DataReader.getProperty("appUrl"));
@@ -17,8 +18,12 @@ public class UserManagementSteps {
 
 	@When("I enter valid username and valid password")
 	public void i_enter_valid_username_and_valid_password() {
-		loginPage.emailField.sendKeys(DataReader.getProperty("username"));
-		loginPage.passwordField.sendKeys(DataReader.getProperty("password"));
+		utils.actionsSendKeys(loginPage.emailField, DataReader.getProperty("username"));
+		utils.actionsSendKeys(loginPage.passwordField, DataReader.getProperty("password"));
+		
+		
+		//loginPage.emailField.sendKeys(DataReader.getProperty("username"));
+		//loginPage.passwordField.sendKeys(DataReader.getProperty("password"));
 	}
 
 	@When("I click on login button")
