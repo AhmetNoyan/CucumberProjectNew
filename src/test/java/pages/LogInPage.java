@@ -4,6 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.BrowserUtilities;
+import utilities.DataReader;
 import utilities.Driver;
 
 public class LogInPage {
@@ -11,7 +13,7 @@ public class LogInPage {
 	public LogInPage() {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
-	
+	BrowserUtilities utils=new BrowserUtilities();
 	@FindBy(name="email")
 	public WebElement emailField;
 	
@@ -26,5 +28,12 @@ public class LogInPage {
 	
 	@FindBy(xpath="//p[text()='These credentials do not match our records.']")
 	public WebElement invalidLoginErrorMessage;
+	
+	
+	public void login() {
+		utils.actionsSendKeys(emailField, DataReader.getProperty("username"));
+		utils.actionsSendKeys(passwordField, DataReader.getProperty("password"));
+		loginBtn.click();
+	}
 	
 }
