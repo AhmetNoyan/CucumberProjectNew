@@ -52,6 +52,11 @@ public class UserManagementSteps {
 	public void i_should_not_be_logged_in() {
 		Assert.assertTrue(loginPage.emailField.isDisplayed());
 	}
+	@When("I enter valid username and invalid password")
+	public void i_enter_valid_username_and_invalid_password() {
+		utils.actionsSendKeys(loginPage.emailField , DataReader.getProperty("username"));
+	    utils.actionsSendKeys(loginPage.passwordField, DataReader.getProperty("invalidPassword"));
+	}
 	
 	
 	
