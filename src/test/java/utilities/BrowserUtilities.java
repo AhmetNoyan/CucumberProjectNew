@@ -1,5 +1,7 @@
 package utilities;
 
+import java.util.Random;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -32,6 +34,12 @@ public class BrowserUtilities {
 		letsSelect=new Select(selectElement);
 		String option=letsSelect.getFirstSelectedOption().getText();
 		return option;
+	}
+	
+	public int randomNumber() {
+		Random rand = new Random();
+		int randomNum = rand.nextInt((999 - 100) + 1) + 100;
+		return randomNum;
 	}
 	
 }

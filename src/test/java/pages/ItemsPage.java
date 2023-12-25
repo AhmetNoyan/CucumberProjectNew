@@ -37,4 +37,10 @@ public class ItemsPage {
 	
 	@FindBy(xpath="//button[text()=' Save Item']")
 	public WebElement saveItemButton;
+	
+	@FindBy(xpath="//h3[text()='Edit Item']")
+	public WebElement editItemHeaderText;
+	
+	@FindBy (xpath = "//button[text()=' Update Item']")
+	public WebElement updateButton;
 }
