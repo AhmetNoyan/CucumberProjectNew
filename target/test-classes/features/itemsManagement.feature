@@ -8,11 +8,12 @@ Feature: Items Management
     Given As an entity user, I am logged in
     And I navigate to Items tab
 
-  @createItem @smoketest
+  @createItemWithTable @smoketest
   Scenario: As a user, I am able to create an item or a service	
     When I click on the Add Item button
     Then I should be on item input page
-    When I provide item information name "iphone", price 1800, unit "pc", and description "a good iphone"
+    When I provide item information to the field 
+   	|iphone|1800|pc|a good iphone|
     And I click Save Item button
     Then The Item is added to the Item list table
 
@@ -24,4 +25,14 @@ Feature: Items Management
     And I click Update Item button
     Then the Item price is updated to 800 dollars
     
+   @deleteItem 
+   Scenario: As a user, I am able to delete an item
+   	When I click on the Add Item button
+   	Then I should be on item input page
+   	When I create an item with following information
+   	|food|3|dz|some description|
+   	Then The Item is added to the Item list table
+   	When I delete the item created above
+   	Then The item is no longer in the items list table
+   
     

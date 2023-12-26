@@ -18,11 +18,24 @@ public class BrowserUtilities {
 		action.sendKeys(element,text).build().perform();
 	}
 	
+	public void actionsClick(WebElement element) {
+		action=new Actions(Driver.getDriver());
+		action.click(element).build().perform();
+	}
+	
 	public void waitUntilElementVisible(WebElement element) {
-		wait=new WebDriverWait(Driver.getDriver(),5);
+		wait=new WebDriverWait(Driver.getDriver(),8);
 		wait.until(ExpectedConditions.visibilityOf(element));
 		
 	}
+	
+	public void waitUntilElementInteractable(WebElement element) {
+		wait=new WebDriverWait(Driver.getDriver(),5);
+		//wait.until(ExpectedConditions.elementtobe(element));
+		
+	}
+	
+	
 	
 	public void selectByVisibleText(WebElement selectElement,String tobeSelectedOption) {
 		letsSelect=new Select(selectElement);

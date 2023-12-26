@@ -1,8 +1,11 @@
 package step_definitions;
 
+import java.util.List;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;
 import pages.CreaterCommonPage;
 import pages.ItemsPage;
@@ -50,7 +53,7 @@ public class ItemsManagementSteps {
 		itemsPage.priceInput.sendKeys(price.toString());
 		itemsPage.unitField.click();
 		utils.waitUntilElementVisible(itemsPage.addItem_pc_Unit);
-		itemsPage.addItem_pc_Unit.click();
+		Driver.getDriver().findElement(By.xpath("//span[text()='"+unit+"']")).click();
 		itemsPage.description.sendKeys(description);
 
 	}
@@ -61,11 +64,15 @@ public class ItemsManagementSteps {
 	}
 
 	@Then("The Item is added to the Item list table")
-	public void the_item_is_added_to_the_item_list_table() {
-		Assert.assertTrue(Driver.getDriver().
-				findElement(By.xpath("//a[text()='" + itemName + "']")).isDisplayed());
-		// Driver.getDriver().findElement(By.xpath("//a[text()=]'"+itemName+"']")).isDisplayed();
-	}
+	public void the_item_is_added_to_the_item_list_table() throws InterruptedException {
+		Thread.sleep(3000);
+		utils.waitUntilElementVisible(itemsPage.filterButton);
+		utils.actionsClick(itemsPage.filterButton);
+		utils.waitUntilElementVisible(itemsPage.filterNameBox);
+		utils.actionsSendKeys(itemsPage.filterNameBox, itemName);
+		//itemsPage.filterNameBox.sendKeys(itemName);
+		Assert.assertTrue(
+				Driver.getDriver().findElement(By.xpath("//a[text()='"+itemName+"']")).isDisplayed());}
 
 	// UPDATE ITEM SCENARIO STEPS
 
@@ -100,4 +107,37 @@ public class ItemsManagementSteps {
 		String trimmedPrice = itemPrice.substring(2);
 		Assert.assertEquals(trimmedPrice, updatedPrice + ".00");
 	}
+	
+	//DataTable has been added to steps
+	@When("I provide item information to the field")
+	public void i_provide_item_information_to_the_field(DataTable dataTable) {
+	   List<String> itemInfo= dataTable.asList();
+	   itemsPage.nameInput.sendKeys(itemInfo.get(0));
+	   itemsPage.priceInput.sendKeys(itemInfo.get(1));
+	   itemsPage.unitField.click();
+	   utils.waitUntilElementVisible(itemsPage.addItem_pc_Unit);
+	   Driver.getDriver().findElement(By.xpath("//span[text()='"+itemInfo.get(2)+"']")).click();
+	   
+	   itemsPage.description.sendKeys(itemInfo.get(3));
+	}
+	//Item delete Scenario
+	@When("I create an item with following information")
+	public void i_create_an_item_with_following_information(DataTable dataTable) {
+	    List<String> itemInfo=dataTable.asList();
+	    itemName=itemInfo.get(0)+utils.randomNumber();
+	    itemsPage.createAnItem(itemName, itemInfo.get(1), itemInfo.get(2), itemInfo.get(3));
+	}
+	@When("I delete the item created above")
+	public void i_delete_the_item_created_above() throws InterruptedException {
+		itemsPage.deleteAnItem(itemName);
+	}
+	@Then("The item is no longer in the items list table")
+	public void the_item_is_no_longer_in_the_items_list_table() {
+		utils.waitUntilElementVisible(itemsPage.filterNoResultFoundMessage);
+		Assert.assertTrue(itemsPage.filterNoResultFoundMessage.isDisplayed());
+	}
+	
+	
+	
+	
 }

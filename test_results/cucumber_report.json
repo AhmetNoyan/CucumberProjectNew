@@ -1,1 +1,189 @@
-[{"line":3,"elements":[{"line":7,"name":"","description":"","type":"background","keyword":"Background","steps":[{"result":{"duration":3896468200,"status":"passed"},"line":8,"name":"As a user, I am on the login page","match":{"location":"step_definitions.UserManagementSteps.as_a_user_i_am_on_the_login_page()"},"keyword":"Given "}]},{"start_timestamp":"2023-12-25T05:56:24.184Z","before":[{"result":{"duration":1159169100,"status":"passed"},"match":{"location":"step_definitions.CommonHooks.setup()"}}],"line":53,"name":"valid credential login attempt","description":"","id":"creater-app-user-management;valid-credential-login-attempt;;2","after":[{"result":{"duration":151760100,"status":"passed"},"match":{"location":"step_definitions.CommonHooks.teardown()"}}],"type":"scenario","keyword":"Scenario Outline","steps":[{"result":{"duration":530512200,"status":"passed"},"line":47,"name":"I enter email \"entityadmin@primetechschool.com\" and password \"primetech@school\"","match":{"arguments":[{"val":"\"entityadmin@primetechschool.com\"","offset":14},{"val":"\"primetech@school\"","offset":61}],"location":"step_definitions.UserManagementSteps.i_enter_email_and_password(java.lang.String,java.lang.String)"},"keyword":"When "},{"result":{"duration":56449300,"status":"passed"},"line":48,"name":"I click on login button","match":{"location":"step_definitions.UserManagementSteps.i_click_on_login_button()"},"keyword":"And "},{"result":{"duration":1052199700,"status":"passed"},"line":49,"name":"I should be on user profile page","match":{"location":"step_definitions.UserManagementSteps.i_should_be_on_user_profile_page()"},"keyword":"Then "}],"tags":[{"name":"@login"},{"name":"@regression"},{"name":"@validLoginAttempts"}]},{"line":7,"name":"","description":"","type":"background","keyword":"Background","steps":[{"result":{"duration":3872974600,"status":"passed"},"line":8,"name":"As a user, I am on the login page","match":{"location":"step_definitions.UserManagementSteps.as_a_user_i_am_on_the_login_page()"},"keyword":"Given "}]},{"start_timestamp":"2023-12-25T05:56:31.099Z","before":[{"result":{"duration":737951900,"status":"passed"},"match":{"location":"step_definitions.CommonHooks.setup()"}}],"line":54,"name":"valid credential login attempt","description":"","id":"creater-app-user-management;valid-credential-login-attempt;;3","after":[{"result":{"duration":151207400,"status":"passed"},"match":{"location":"step_definitions.CommonHooks.teardown()"}}],"type":"scenario","keyword":"Scenario Outline","steps":[{"result":{"duration":552899300,"status":"passed"},"line":47,"name":"I enter email \"entityadmin@primetechschool.com\" and password \"primetech@school\"","match":{"arguments":[{"val":"\"entityadmin@primetechschool.com\"","offset":14},{"val":"\"primetech@school\"","offset":61}],"location":"step_definitions.UserManagementSteps.i_enter_email_and_password(java.lang.String,java.lang.String)"},"keyword":"When "},{"result":{"duration":38405700,"status":"passed"},"line":48,"name":"I click on login button","match":{"location":"step_definitions.UserManagementSteps.i_click_on_login_button()"},"keyword":"And "},{"result":{"duration":1018933700,"status":"passed"},"line":49,"name":"I should be on user profile page","match":{"location":"step_definitions.UserManagementSteps.i_should_be_on_user_profile_page()"},"keyword":"Then "}],"tags":[{"name":"@login"},{"name":"@regression"},{"name":"@validLoginAttempts"}]},{"line":7,"name":"","description":"","type":"background","keyword":"Background","steps":[{"result":{"duration":3904107500,"status":"passed"},"line":8,"name":"As a user, I am on the login page","match":{"location":"step_definitions.UserManagementSteps.as_a_user_i_am_on_the_login_page()"},"keyword":"Given "}]},{"start_timestamp":"2023-12-25T05:56:37.493Z","before":[{"result":{"duration":726721800,"status":"passed"},"match":{"location":"step_definitions.CommonHooks.setup()"}}],"line":55,"name":"valid credential login attempt","description":"","id":"creater-app-user-management;valid-credential-login-attempt;;4","after":[{"result":{"duration":165164800,"status":"passed"},"match":{"location":"step_definitions.CommonHooks.teardown()"}}],"type":"scenario","keyword":"Scenario Outline","steps":[{"result":{"duration":533176700,"status":"passed"},"line":47,"name":"I enter email \"entityadmin@primetechschool.com\" and password \"primetech@school\"","match":{"arguments":[{"val":"\"entityadmin@primetechschool.com\"","offset":14},{"val":"\"primetech@school\"","offset":61}],"location":"step_definitions.UserManagementSteps.i_enter_email_and_password(java.lang.String,java.lang.String)"},"keyword":"When "},{"result":{"duration":42867200,"status":"passed"},"line":48,"name":"I click on login button","match":{"location":"step_definitions.UserManagementSteps.i_click_on_login_button()"},"keyword":"And "},{"result":{"duration":1048176800,"status":"passed"},"line":49,"name":"I should be on user profile page","match":{"location":"step_definitions.UserManagementSteps.i_should_be_on_user_profile_page()"},"keyword":"Then "}],"tags":[{"name":"@login"},{"name":"@regression"},{"name":"@validLoginAttempts"}]},{"line":7,"name":"","description":"","type":"background","keyword":"Background","steps":[{"result":{"duration":3846414000,"status":"passed"},"line":8,"name":"As a user, I am on the login page","match":{"location":"step_definitions.UserManagementSteps.as_a_user_i_am_on_the_login_page()"},"keyword":"Given "}]},{"start_timestamp":"2023-12-25T05:56:43.928Z","before":[{"result":{"duration":702581300,"status":"passed"},"match":{"location":"step_definitions.CommonHooks.setup()"}}],"line":56,"name":"valid credential login attempt","description":"","id":"creater-app-user-management;valid-credential-login-attempt;;5","after":[{"result":{"duration":155559300,"status":"passed"},"match":{"location":"step_definitions.CommonHooks.teardown()"}}],"type":"scenario","keyword":"Scenario Outline","steps":[{"result":{"duration":536391200,"status":"passed"},"line":47,"name":"I enter email \"entityadmin@primetechschool.com\" and password \"primetech@school\"","match":{"arguments":[{"val":"\"entityadmin@primetechschool.com\"","offset":14},{"val":"\"primetech@school\"","offset":61}],"location":"step_definitions.UserManagementSteps.i_enter_email_and_password(java.lang.String,java.lang.String)"},"keyword":"When "},{"result":{"duration":40951400,"status":"passed"},"line":48,"name":"I click on login button","match":{"location":"step_definitions.UserManagementSteps.i_click_on_login_button()"},"keyword":"And "},{"result":{"duration":1023051300,"status":"passed"},"line":49,"name":"I should be on user profile page","match":{"location":"step_definitions.UserManagementSteps.i_should_be_on_user_profile_page()"},"keyword":"Then "}],"tags":[{"name":"@login"},{"name":"@regression"},{"name":"@validLoginAttempts"}]},{"line":7,"name":"","description":"","type":"background","keyword":"Background","steps":[{"result":{"duration":3917689100,"status":"passed"},"line":8,"name":"As a user, I am on the login page","match":{"location":"step_definitions.UserManagementSteps.as_a_user_i_am_on_the_login_page()"},"keyword":"Given "}]},{"start_timestamp":"2023-12-25T05:56:50.255Z","before":[{"result":{"duration":840470800,"status":"passed"},"match":{"location":"step_definitions.CommonHooks.setup()"}}],"line":57,"name":"valid credential login attempt","description":"","id":"creater-app-user-management;valid-credential-login-attempt;;6","after":[{"result":{"duration":181213500,"status":"passed"},"match":{"location":"step_definitions.CommonHooks.teardown()"}}],"type":"scenario","keyword":"Scenario Outline","steps":[{"result":{"duration":458559100,"status":"passed"},"line":47,"name":"I enter email \"entityadmin@primetechschool.com\" and password \"primetech@school\"","match":{"arguments":[{"val":"\"entityadmin@primetechschool.com\"","offset":14},{"val":"\"primetech@school\"","offset":61}],"location":"step_definitions.UserManagementSteps.i_enter_email_and_password(java.lang.String,java.lang.String)"},"keyword":"When "},{"result":{"duration":41912100,"status":"passed"},"line":48,"name":"I click on login button","match":{"location":"step_definitions.UserManagementSteps.i_click_on_login_button()"},"keyword":"And "},{"result":{"duration":1020687300,"status":"passed"},"line":49,"name":"I should be on user profile page","match":{"location":"step_definitions.UserManagementSteps.i_should_be_on_user_profile_page()"},"keyword":"Then "}],"tags":[{"name":"@login"},{"name":"@regression"},{"name":"@validLoginAttempts"}]},{"line":7,"name":"","description":"","type":"background","keyword":"Background","steps":[{"result":{"duration":3882094800,"status":"passed"},"line":8,"name":"As a user, I am on the login page","match":{"location":"step_definitions.UserManagementSteps.as_a_user_i_am_on_the_login_page()"},"keyword":"Given "}]},{"start_timestamp":"2023-12-25T05:56:56.728Z","before":[{"result":{"duration":721110500,"status":"passed"},"match":{"location":"step_definitions.CommonHooks.setup()"}}],"line":58,"name":"valid credential login attempt","description":"","id":"creater-app-user-management;valid-credential-login-attempt;;7","after":[{"result":{"duration":165249600,"status":"passed"},"match":{"location":"step_definitions.CommonHooks.teardown()"}}],"type":"scenario","keyword":"Scenario Outline","steps":[{"result":{"duration":536139700,"status":"passed"},"line":47,"name":"I enter email \"entityadmin@primetechschool.com\" and password \"primetech@school\"","match":{"arguments":[{"val":"\"entityadmin@primetechschool.com\"","offset":14},{"val":"\"primetech@school\"","offset":61}],"location":"step_definitions.UserManagementSteps.i_enter_email_and_password(java.lang.String,java.lang.String)"},"keyword":"When "},{"result":{"duration":41910800,"status":"passed"},"line":48,"name":"I click on login button","match":{"location":"step_definitions.UserManagementSteps.i_click_on_login_button()"},"keyword":"And "},{"result":{"duration":1104339100,"status":"passed"},"line":49,"name":"I should be on user profile page","match":{"location":"step_definitions.UserManagementSteps.i_should_be_on_user_profile_page()"},"keyword":"Then "}],"tags":[{"name":"@login"},{"name":"@regression"},{"name":"@validLoginAttempts"}]},{"line":7,"name":"","description":"","type":"background","keyword":"Background","steps":[{"result":{"duration":3893144600,"status":"passed"},"line":8,"name":"As a user, I am on the login page","match":{"location":"step_definitions.UserManagementSteps.as_a_user_i_am_on_the_login_page()"},"keyword":"Given "}]},{"start_timestamp":"2023-12-25T05:57:03.185Z","before":[{"result":{"duration":714883500,"status":"passed"},"match":{"location":"step_definitions.CommonHooks.setup()"}}],"line":59,"name":"valid credential login attempt","description":"","id":"creater-app-user-management;valid-credential-login-attempt;;8","after":[{"result":{"duration":161800900,"status":"passed"},"match":{"location":"step_definitions.CommonHooks.teardown()"}}],"type":"scenario","keyword":"Scenario Outline","steps":[{"result":{"duration":519323100,"status":"passed"},"line":47,"name":"I enter email \"entityadmin@primetechschool.com\" and password \"primetech@school\"","match":{"arguments":[{"val":"\"entityadmin@primetechschool.com\"","offset":14},{"val":"\"primetech@school\"","offset":61}],"location":"step_definitions.UserManagementSteps.i_enter_email_and_password(java.lang.String,java.lang.String)"},"keyword":"When "},{"result":{"duration":42813100,"status":"passed"},"line":48,"name":"I click on login button","match":{"location":"step_definitions.UserManagementSteps.i_click_on_login_button()"},"keyword":"And "},{"result":{"duration":1068422200,"status":"passed"},"line":49,"name":"I should be on user profile page","match":{"location":"step_definitions.UserManagementSteps.i_should_be_on_user_profile_page()"},"keyword":"Then "}],"tags":[{"name":"@login"},{"name":"@regression"},{"name":"@validLoginAttempts"}]},{"line":7,"name":"","description":"","type":"background","keyword":"Background","steps":[{"result":{"duration":3892468800,"status":"passed"},"line":8,"name":"As a user, I am on the login page","match":{"location":"step_definitions.UserManagementSteps.as_a_user_i_am_on_the_login_page()"},"keyword":"Given "}]},{"start_timestamp":"2023-12-25T05:57:09.596Z","before":[{"result":{"duration":740151600,"status":"passed"},"match":{"location":"step_definitions.CommonHooks.setup()"}}],"line":60,"name":"valid credential login attempt","description":"","id":"creater-app-user-management;valid-credential-login-attempt;;9","after":[{"result":{"duration":179409400,"status":"passed"},"match":{"location":"step_definitions.CommonHooks.teardown()"}}],"type":"scenario","keyword":"Scenario Outline","steps":[{"result":{"duration":441695500,"status":"passed"},"line":47,"name":"I enter email \"entityadmin@primetechschool.com\" and password \"primetech@school\"","match":{"arguments":[{"val":"\"entityadmin@primetechschool.com\"","offset":14},{"val":"\"primetech@school\"","offset":61}],"location":"step_definitions.UserManagementSteps.i_enter_email_and_password(java.lang.String,java.lang.String)"},"keyword":"When "},{"result":{"duration":42398500,"status":"passed"},"line":48,"name":"I click on login button","match":{"location":"step_definitions.UserManagementSteps.i_click_on_login_button()"},"keyword":"And "},{"result":{"duration":1078366300,"status":"passed"},"line":49,"name":"I should be on user profile page","match":{"location":"step_definitions.UserManagementSteps.i_should_be_on_user_profile_page()"},"keyword":"Then "}],"tags":[{"name":"@login"},{"name":"@regression"},{"name":"@validLoginAttempts"}]}],"name":"Creater app user management","description":"  User with permission should be able \n  interact with the application on seccessful login ","id":"creater-app-user-management","keyword":"Feature","uri":"file:src/test/resources/features/userManagement.feature","tags":[{"name":"@login","type":"Tag","location":{"line":2,"column":1}},{"name":"@regression","type":"Tag","location":{"line":2,"column":8}}]}]
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4474895400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "As an entity user, I am logged in",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.as_an_entity_user_i_am_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1165678500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I navigate to Items tab",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_navigate_to_items_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-12-26T05:31:42.648Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1172097500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.setup()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "As a user, I am able to delete an item",
+        "description": "",
+        "id": "items-management;as-a-user--i-am-able-to-delete-an-item",
+        "after": [
+          {
+            "result": {
+              "duration": 175983200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 45850300,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I click on the Add Item button",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_the_add_item_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 101407100,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I should be on item input page",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_be_on_item_input_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2975427600,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I create an item with following information",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_create_an_item_with_following_information(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "food",
+                  "3",
+                  "dz",
+                  "some description"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3419079300,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "The Item is added to the Item list table",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.the_item_is_added_to_the_item_list_table()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3034034300,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I delete the item created above",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_delete_the_item_created_above()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 306286000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "The item is no longer in the items list table",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.the_item_is_no_longer_in_the_items_list_table()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@itemsTests"
+          },
+          {
+            "name": "@deleteItem"
+          }
+        ]
+      }
+    ],
+    "name": "Items Management",
+    "description": "",
+    "id": "items-management",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/itemsManagement.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@itemsTests",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      }
+    ]
+  }
+]
