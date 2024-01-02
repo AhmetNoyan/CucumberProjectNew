@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 				"json:test_results/cucumber_report.json"},
 		features="./src/test/resources/features",
 		glue="step_definitions",
-		tags="@deleteItem",
+		tags="@smokeTest",
 		publish=true,
 		dryRun=false //It will scan the feature files and it will check if anything is not implemented. It wont run anything.
 		)

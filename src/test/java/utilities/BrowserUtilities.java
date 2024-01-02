@@ -34,6 +34,10 @@ public class BrowserUtilities {
 		//wait.until(ExpectedConditions.elementtobe(element));
 		
 	}
+	public void waitUntilElementToBeClickable(WebElement element) {
+		wait = new WebDriverWait(Driver.getDriver(), 10);
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+	}
 	
 	
 	

@@ -8,7 +8,7 @@ Feature: Items Management
     Given As an entity user, I am logged in
     And I navigate to Items tab
 
-  @createItemWithTable @smoketest
+  @createItemWithTable @smokeTest
   Scenario: As a user, I am able to create an item or a service	
     When I click on the Add Item button
     Then I should be on item input page
