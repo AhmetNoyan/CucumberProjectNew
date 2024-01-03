@@ -49,6 +49,7 @@ public class ItemsManagementSteps {
 	public void i_provide_item_information_name_price_unit_and_description(String name, Integer price, String unit,
 			String description) {
 		itemName = name+utils.randomNumber();
+		System.out.println("itemName that has been created: "+itemName);
 		itemsPage.nameInput.sendKeys(itemName);
 		itemsPage.priceInput.sendKeys(price.toString());
 		itemsPage.unitField.click();
@@ -69,6 +70,7 @@ public class ItemsManagementSteps {
 		utils.waitUntilElementVisible(itemsPage.filterButton);
 		utils.actionsClick(itemsPage.filterButton);
 		utils.waitUntilElementVisible(itemsPage.filterNameBox);
+		System.out.println("itemName for list table check: "+itemName);
 		utils.actionsSendKeys(itemsPage.filterNameBox, itemName);
 		//itemsPage.filterNameBox.sendKeys(itemName);
 		Assert.assertTrue(
@@ -113,6 +115,7 @@ public class ItemsManagementSteps {
 	public void i_provide_item_information_to_the_field(DataTable dataTable) {
 	   List<String> itemInfo= dataTable.asList();
 	   itemsPage.nameInput.sendKeys(itemInfo.get(0));
+	   itemName=itemInfo.get(0);
 	   itemsPage.priceInput.sendKeys(itemInfo.get(1));
 	   itemsPage.unitField.click();
 	   utils.waitUntilElementVisible(itemsPage.addItem_pc_Unit);

@@ -1,6 +1,6 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
         "line": 7,
@@ -11,24 +11,36 @@
         "steps": [
           {
             "result": {
-              "duration": 841221600,
+              "duration": 1465147200,
               "status": "passed"
             },
             "line": 8,
-            "name": "As a user, I am on the login page",
+            "name": "As an entity user, I am logged in",
             "match": {
-              "location": "step_definitions.UserManagementSteps.as_a_user_i_am_on_the_login_page()"
+              "location": "step_definitions.ItemsManagementSteps.as_an_entity_user_i_am_logged_in()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1059384700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I navigate to Items tab",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_navigate_to_items_tab()"
+            },
+            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2024-01-02T04:20:04.720Z",
+        "start_timestamp": "2024-01-03T17:45:41.031Z",
         "before": [
           {
             "result": {
-              "duration": 2019477000,
+              "duration": 2500895200,
               "status": "passed"
             },
             "match": {
@@ -37,13 +49,13 @@
           }
         ],
         "line": 12,
-        "name": "Successful login",
+        "name": "As a user, I am able to create an item or a service",
         "description": "",
-        "id": "creater-app-user-management;successful-login",
+        "id": "items-management;as-a-user--i-am-able-to-create-an-item-or-a-service",
         "after": [
           {
             "result": {
-              "duration": 572311600,
+              "duration": 992610600,
               "status": "passed"
             },
             "match": {
@@ -56,77 +68,108 @@
         "steps": [
           {
             "result": {
-              "duration": 450186000,
+              "duration": 48279000,
               "status": "passed"
             },
             "line": 13,
-            "name": "I enter valid username and valid password",
+            "name": "I click on the Add Item button",
             "match": {
-              "location": "step_definitions.UserManagementSteps.i_enter_valid_username_and_valid_password()"
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_the_add_item_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 38628500,
+              "duration": 42816400,
               "status": "passed"
             },
             "line": 14,
-            "name": "I click on login button",
+            "name": "I should be on item input page",
             "match": {
-              "location": "step_definitions.UserManagementSteps.i_click_on_login_button()"
+              "location": "step_definitions.ItemsManagementSteps.i_should_be_on_item_input_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2831694800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I provide item information to the field",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_provide_item_information_to_the_field(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "iphone",
+                  "1800",
+                  "pc",
+                  "a good iphone"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47025700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click Save Item button",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_save_item_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1051260600,
+              "duration": 3926419900,
               "status": "passed"
             },
-            "line": 15,
-            "name": "I should be on user profile page",
+            "line": 18,
+            "name": "The Item is added to the Item list table",
             "match": {
-              "location": "step_definitions.UserManagementSteps.i_should_be_on_user_profile_page()"
+              "location": "step_definitions.ItemsManagementSteps.the_item_is_added_to_the_item_list_table()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@login"
-          },
-          {
             "name": "@regression"
           },
           {
-            "name": "@validlogin"
+            "name": "@itemsTests"
           },
           {
-            "name": "@smokeTest"
+            "name": "@createItemWithTable"
           }
         ]
       }
     ],
-    "name": "Creater app user management",
-    "description": "  User with permission should be able \n  interact with the application on seccessful login ",
-    "id": "creater-app-user-management",
+    "name": "Items Management",
+    "description": "",
+    "id": "items-management",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/userManagement.feature",
+    "uri": "file:src/test/resources/features/itemsManagement.feature",
     "tags": [
-      {
-        "name": "@login",
-        "type": "Tag",
-        "location": {
-          "line": 2,
-          "column": 1
-        }
-      },
       {
         "name": "@regression",
         "type": "Tag",
         "location": {
-          "line": 2,
-          "column": 8
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@itemsTests",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
         }
       }
     ]
