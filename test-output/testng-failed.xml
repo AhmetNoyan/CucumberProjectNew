@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoketests_Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SmokeTest_Execution(failed)">
+    <groups>
+      <run>
+        <include name="smoketest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="api_tests.TestNgDemo">
+        <methods>
+          <include name="softAssertion"/>
+          <include name="uiTestDemo1"/>
+        </methods>
+      </class> <!-- api_tests.TestNgDemo -->
+    </classes>
+  </test> <!-- SmokeTest_Execution(failed) -->
+</suite> <!-- Failed suite [Smoketests_Suite] -->
