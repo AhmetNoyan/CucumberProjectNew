@@ -61,7 +61,9 @@ public class UserManagementSteps {
 	@When("I enter valid username and invalid password")
 	public void i_enter_valid_username_and_invalid_password() {
 		utils.actionsSendKeys(loginPage.emailField , DataReader.getProperty("username"));
+		emailAddress=DataReader.getProperty("username");
 	    utils.actionsSendKeys(loginPage.passwordField, DataReader.getProperty("invalidPassword"));
+	    passwordInput=DataReader.getProperty("invalidPassword");
 	}
 	
 	//Scenario outline steps
