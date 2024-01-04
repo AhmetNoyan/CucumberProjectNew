@@ -44,7 +44,7 @@ public class TestNgDemo {
 		System.out.println("it should print this message");
 		softassert.assertAll();
 	}
-	@Test(priority=0,description="first method to run",groups="smoketest",dependsOnMethods="assertionDemo")
+	@Test(priority=0,description="first method to run",groups={"smoketest","regression"},dependsOnMethods="assertionDemo")
 	public void uiTestDemo() {
 		page = new SauceDemoPage();
 		//Test case 1go to https://saucedemo.com

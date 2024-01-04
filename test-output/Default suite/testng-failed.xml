@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api_tests.TestNgDemo">
+      <class name="api_tests.PetStoreAPIs">
         <methods>
-          <include name="softAssertion"/>
-          <include name="afterTest"/>
-          <include name="beforeMethod"/>
-          <include name="beforeTest"/>
-          <include name="uiTestDemo1"/>
+          <include name="findPetByID"/>
         </methods>
-      </class> <!-- api_tests.TestNgDemo -->
+      </class> <!-- api_tests.PetStoreAPIs -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
