@@ -21,6 +21,20 @@ public class PetStoreAPIs {
 	int petID=22112;
 	int petId;
 	
+	
+	@Test
+	public void petNotFound() {
+		String endpoint = "/pet/" + 648730;
+		response = given().accept(ContentType.JSON)
+		.contentType("application/json")
+		.get(endpoint).thenReturn();
+		
+		assertEquals(response.getStatusCode(), 404);
+		assertEquals(response.getContentType(), "application/json");
+		
+		response.prettyPrint();
+		assertEquals(response.jsonPath().getString("message"), "Pet not found");
+	}
 	@Test
 	public void createApet_with_JSON_File() {
 		String endpoint="/pet";
